@@ -22,21 +22,20 @@ An intelligent and secure email summarizer that fetches emails, extracts key con
 
 ---
 
-Tech Stack
-Technology | Purpose
-Python | Core programming language
-Flask | Web server and backend framework
-Socket.IO | Real-time updates for summaries
-PyTorch | Running LLMs for summarization
-HuggingFace | Transformer models (BART, T5, etc.)
-OAuth 2.0 | Secure authentication with Google/Outlook
-dotenv | Managing environment variables securely
+# Tech Stack
 
+| Technology   | Purpose                                   |
+|--------------|-------------------------------------------|
+| Python       | Core programming language                 |
+| Flask        | Web server and backend framework          |
+| Socket.IO    | Real-time updates for summaries           |
+| PyTorch      | Running LLMs for summarization            |
+| HuggingFace  | Transformer models (BART, T5, etc.)       |
+| OAuth 2.0    | Secure authentication with Google/Outlook |
+| dotenv       | Managing environment variables securely   |
 ---
 
-### 🚀 Getting Started
-
-## credentials from GCP
+# 🚀 Getting Started
 
 # How to Get Gmail OAuth2 Credentials from GCP
 
@@ -72,7 +71,7 @@ Add scopes: Click "Add or Remove Scopes" → add:
  https://mail.google.com/
  https://www.googleapis.com/auth/gmail.readonly
 
-```bash
+```
 
 Save and continue to publish the app (can stay in "Testing" mode)
 
@@ -96,21 +95,20 @@ Save this as client_secret.json in the root directory of your project
 
 Add to .gitignore:
 
-bash
-Copy
-Edit
+```bash
 echo "client_secret.json" >> .gitignore
+```
+
 Your .env should look like:
 
-env
-Copy
-Edit
+```bash
 GOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com
 GOOGLE_CLIENT_SECRET=your-secret
 REDIRECT_URI=http://localhost:5000/oauth2callback
-
+```
 
 ### 📁 Clone the repo
+
 ```bash
 git clone https://github.com/DanielWill-1/Personalized-Email-Summarization
 cd Personalized-Email-Summarization
@@ -120,11 +118,7 @@ python app.py
 Installation of dependencies
 ```bash
 pip install -r requirements.txt
-```bash
-
-
-
-
+```
 
 ---
 Summary Logic
