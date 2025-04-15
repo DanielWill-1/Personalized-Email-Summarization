@@ -112,16 +112,21 @@ REDIRECT_URI=http://localhost:5000/oauth2callback
 ```bash
 git clone https://github.com/DanielWill-1/Personalized-Email-Summarization
 cd Personalized-Email-Summarization
-python app.py
-
 ```
 Installation of dependencies
 ```bash
 pip install -r requirements.txt
 ```
+Run the program:
+
+```bash
+python app.py
+```
 
 ---
-Summary Logic
+
+# Summary Logic
+
 Login via OAuth → Get secure email access token
 
 Fetch emails → Use IMAP to retrieve unread/important messages
@@ -129,9 +134,10 @@ Fetch emails → Use IMAP to retrieve unread/important messages
 Run Summarizer → Use LLM (e.g., T5 or BART) for abstract summarization
 
 Display → Return summary with highlights and links
+
 ---
 
-Models Used
+# Models Used
 facebook/bart-large-cnn
 
 t5-small (lightweight alternative)
@@ -139,8 +145,7 @@ t5-small (lightweight alternative)
 Supports switching models via config
 
 ---
-
-TODO / Roadmap
+# TODO / Roadmap
  Outlook OAuth integration
 
  User profile & preferences
