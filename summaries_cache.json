@@ -8,7 +8,11 @@
     "category": "Policies"
   },
   "1963555ba3863c38": {
-    "summary": "A suite of new features will be rolling out to our App Store in the coming weeks. You can now fine-tune recommendations for apps and games based on your interests. A new Privacy Dashboard lets you manage what data is used",
+    "summary": "A suite of new features will be rolling out to our App Store in the coming weeks. You can now fine-tune these recommendations by selecting which activities (e.g., app installs, purchases) influence them. A new Privacy Dashboard lets you manage what data is used for personalization.",
+    "category": "Personal"
+  },
+  "19635530c3c48e8e": {
+    "summary": "This is a test email to check if the summarization works correctly. This is atest email to see if the summary works correctly, and if it doesn't work.",
     "category": "Personal"
   }
 }
